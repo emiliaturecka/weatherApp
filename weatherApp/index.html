@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherApp</title>
+    <link rel="stylesheet" href="css/mojeStyle.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/a4a5866e1f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+        
+    <div class="bg-image col-12">
+        <div class="d-flex flex-xxl-row flex-xl-row flex-lg-row flex-md-row flex-sm-column  flex-column col-12">
+            <div class="col-xxl-10 col-xl-10 col-lg-10 col-md-9 col-sm-12 d-flex flex-column align-items-center justify-content-center">
+                <div class="col-11 col-xxl-5 col-xl-5 col-lg-6 col-md-7 col-sm-8 m-4 rounded border wyniki d-flex flex-column align-items-center justify-content-center">
+                    <span id="cityName" class="custom2"></span>
+                    <p class="custom2"><span class="custom2" id="temperature"></span> &deg;C</p>
+                    <img id="weatherIcon" src="" alt="Icon"><br>
+                    <p class="custom3">Wilgotność: <span id="humidity"></span>%</p><br>
+                    <p class="custom3">Ciśnienie: <span id="pressure"></span> hPa</p><br>
+                    <p class="custom3">Prędkość wiatru: <span id="windSpeed"></span> m/s</p>
+                </div>
+            </div>
+
+            <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-3 col-sm-12 wyszukiwarka">
+                <input type="text" class="col-8 bg-transparent border-bottom border-light-emphasis border-top-0 border-start-0 border-end-0 m-1" id="cityInput"
+                    placeholder="Wyszukaj miasto">
+                <button type="button" id="getWeatherBtn" class="btn"><i class="fa-solid fa-magnifying-glass text-light"></i></button>
+                <div class="dropdown d-lg-none d-md-none">
+                    <button class="btn btn-secondary dropdown-toggle bg-transparent border-bottom border-light-emphasis border-top-0 border-start-0 border-end-0" type="button" id="savedCitiesDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                      Wybierz miasto
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="savedCitiesDropdown">
+                      <li><button class="dropdown-item savedCityBtn" data-city="Wrocław">Wrocław</button></li>
+                      <li><button class="dropdown-item savedCityBtn" data-city="Bolesławiec">Bolesławiec</button></li>
+                      <li><button class="dropdown-item savedCityBtn" data-city="Karpacz">Karpacz</button></li>
+                      <li><button class="dropdown-item savedCityBtn" data-city="Warszawa">Warszawa</button></li>
+                      <li><button class="dropdown-item savedCityBtn" data-city="Kołobrzeg">Kołobrzeg</button></li>
+                    </ul>
+                  </div>
+                  <div class="d-lg-block d-md-block d-none">
+                    <button class="savedCityBtn col-7 m-2 bg-transparent border-bottom border-light-emphasis border-top-0 border-start-0 border-end-0" data-city="Wrocław">Wrocław</button><br>
+                    <button class="savedCityBtn col-7 m-2 bg-transparent border-bottom border-light-emphasis border-top-0 border-start-0 border-end-0" data-city="Bolesławiec">Bolesławiec</button><br>
+                    <button class="savedCityBtn col-7 m-2 bg-transparent border-bottom border-light-emphasis border-top-0 border-start-0 border-end-0" data-city="Karpacz">Karpacz</button><br>
+                    <button class="savedCityBtn col-7 m-2 bg-transparent border-bottom border-light-emphasis border-top-0 border-start-0 border-end-0" data-city="Warszawa">Warszawa</button><br>
+                    <button class="savedCityBtn col-7 m-2 bg-transparent border-bottom border-light-emphasis border-top-0 border-start-0 border-end-0" data-city="Kołobrzeg">Kołobrzeg</button>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

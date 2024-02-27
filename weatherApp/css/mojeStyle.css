@@ -1,0 +1,45 @@
+.custom{
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.bg-image{
+    background-image: url('assets/1.png');
+    height: 100vh;
+    background-position: absolute;
+}
+
+.wyszukiwarka{
+    background: rgba(110, 110, 110, 0.5);
+    height: 100vh;
+}
+
+
+
+.custom2{
+    font-size: xx-large;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #535353;
+}
+
+.custom3{
+    font-size: larger;
+    color: rgb(249, 244, 237);
+}
+
+.wyniki{
+    background: rgba(110, 110, 110, 0.5);
+    height: 60vh;
+}
+
+::placeholder{
+    color: #000000;
+}
+
+@media (max-width: 770px) {
+    .wyszukiwarka {
+      height:auto;
+      order: -1;
+    }
+  }
